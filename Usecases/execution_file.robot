@@ -19,9 +19,9 @@ Test Teardown    logout
 
 *** Test Cases ***
 sort_functionality
-    # sort_a_to_z
+    sort_a_to_z
     # sort_z_to_a
-    sort_low_to_high
+    # sort_low_to_high
     # sort_high_to_low
     
     

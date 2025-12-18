@@ -16,7 +16,7 @@ sort_a_to_z
     ${abc}    Create List
     ${bca}    Create List
     FOR    ${counter}    IN RANGE    1   7    
-        ${a}    Get Text    (//div[@class='inventory_item_name'])[${counter}]   
+        ${a}    Get Text    (//div[@data-test="inventory-item-name"])[${counter}]   
         Append To List    ${abc}    ${a}
     END
     ${bca}    Copy List   ${abc} 
@@ -31,7 +31,7 @@ sort_z_to_a
     ${abc}    Create List
     ${bca}    Create List
     FOR    ${counter}    IN RANGE    1   7    
-        ${a}    Get Text    (//div[@class='inventory_item_name'])[${counter}]   
+        ${a}    Get Text    (//div[@data-test="inventory-item-name"])[${counter}]    
         Append To List    ${abc}    ${a}
     END
     ${bca}    Copy List   ${abc} 
@@ -50,7 +50,7 @@ sort_low_to_high
     ${abc}    Create List
     ${bca}    Create List
     FOR    ${counter}    IN RANGE    1   7    
-        ${a}    Get Text    (//div[@class='inventory_item_price'])[${counter}]   
+        ${a}    Get Text    (//div[@data-test="inventory-item-name"])[${counter}]   
         Append To List    ${abc}    ${a}
     END
     ${bca}    Copy List   ${abc}  

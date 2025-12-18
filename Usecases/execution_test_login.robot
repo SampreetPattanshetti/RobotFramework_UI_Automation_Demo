@@ -13,6 +13,7 @@ Variables    ../Locators/Cart_locators.py
 Variables    ../Locators/Sort_locators.py
 Variables    ../Constants/dm_constant.py
 #pip install robotframework-datadriver
+#pip install -U robotframework-datadriver[XLS]
 Library    DataDriver    file=Book1.xlsx    dialect=excel
 Test Template    Test_login
 
